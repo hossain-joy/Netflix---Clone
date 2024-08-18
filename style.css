@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/coverimg.jpg);
+    height: 63vh;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main .box {
+    height: 100%;
+    width: 100%;
+    opacity: 0.70;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 90vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.hero > :nth-child(1) {
+    font-weight: 800;
+    font-size: 52px;
+    padding: 10px;
+}
+
+.hero > :nth-child(2) {
+    font-weight: 540;
+    font-size: 26px;
+    padding: 10px;
+}
+
+.hero > :nth-child(3) {
+    font-weight: 540;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.separation {
+    height: 5px;
+    background-color: rgb(46 44 44);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(80, 80, 80, 0);
+    border: 1px solid rgb(248, 248, 248);
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid red;
+    cursor: pointer;
+    padding: 8px;
+    flex: 1;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px; /* Adjust gap as needed */
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px; /* Add margin to separate the buttons from the text */
+}
+
+.hero-buttons input {
+    color: white;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(15, 15, 15, 0.5);
+    border: 1px solid rgba(210, 197, 197, 0.7);
+    flex: 3;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.hero-buttons button {
+    flex: 1;
+    padding: 8px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.SecImg {
+    position: relative;
+}
+
+.SecImg img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.SecImg video {
+    position: absolute;
+    width: 70%;
+    top: 25%;
+    left: 15%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+section.first > div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.first > div:first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first > div:nth-child(2) {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .hero > :nth-child(1) {
+        font-size: 36px;
+    }
+
+    .hero > :nth-child(2) {
+        font-size: 20px;
+    }
+
+    .hero > :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+    }
+
+    .hero-buttons input,
+    .hero-buttons button {
+        width: 100%;
+        flex: none;
+    }
+
+    .main {
+        height: auto;
+    }
+
+    .SecImg video {
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+    }
+}
